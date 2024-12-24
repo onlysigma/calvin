@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+      >
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        .nav-item a {
+            cursor: pointer;
+            font-size: 1.3rem;
+            color: rgb(255, 252, 252);
+            padding: 1rem;
+
+        }
+
+        .navbar {
+            background-color: #FF9064;
+        }
+
+        .parent1 {
+            background-image: url(https://preview.colorlib.com/theme/calvin/assets/img/hero/h1_hero.png.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: auto;
+        }
+
+        .content1 h1 {
+            margin-left: -10rem;
+            width: 90vh;
+            font-size: 3.5rem;
+            margin-top: 19rem;
+
+        }
+
+        .content1 h5 {
+            font-size: 2rem;
+            margin-left: -10rem;
+
+        }
+
+        .img1 {
+            margin-top: 15rem;
+        }
+
+        .email {
+            margin-top: 7rem;
+        }
+
+        .card7 a {
+            text-decoration: none;
+            color: #eb600f;
+            font-size: 1.2rem;
+        }
+
+        .card7 a:hover {
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            padding-left: 1rem;
+
+        }
+
+        .card7 {
+            border: 1px solid rgb(223, 223, 223);
+            padding: 2rem;
+        }
+
+        .card7 h2 {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .fa-solid {
+            font-size: 3rem;
+        }
+
+        .fa-solid:hover {
+            color: #eb600f;
+        }
+
+        .card4 {
+            padding: 1rem;
+        }
+
+        /* .btn4 {
+            padding: 0.6rem;
+            width: 10vw;
+            border: 1px solid #FF9064;
+            color: #eb600f;
+            text-align: center;
+            margin-left: 30rem;
+            border-radius: 4px;
+        } */
+        .text1 h3{
+            color: #eb600f;
+        }
+        .progress-bar{
+            padding: 2rem;
+        }
+        .pro4 h6{
+            font-weight: bold;
+        }
+        .card {
+  width: 150px; /* Set a fixed width for each card */
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 100px; /* Adjust the height of images */
+  object-fit: contain; /* Ensures the image fits nicely */
+}
+
+.carousel-inner {
+  align-items: center;
+}
+.carousel-item div {
+  padding: 10px; /* Adds spacing between the images */
+}
+
+img {
+  object-fit: contain; /* Ensures images fit without distortion */
+}
+
+p {
+  font-size: 14px; /* Adjusts the text size below the image */
+  margin-top: 5px; /* Adds spacing between image and text */
+}
+
+.inner4{
+  background-color: #fffaf5; /* Light background for the slider */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #666; /* Text color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #f8f9fa; /* Light background for arrows */
+  border-radius: 50%;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+  margin: 15px auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #f8f9fa; /* Light background for arrows */
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #ff7f50; /* Coral color on hover */
+  transform: scale(1.2); /* Slightly enlarge the button */
+}
+.news-card {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      color: white;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .news-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    }
+
+    .news-category {
+      background-color: orange;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      padding: 2px 8px;
+      display: inline-block;
+    }
+
+    .news-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .news-meta {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+   
+    footer {
+      background-color: #000;
+      padding: 40px 0;
+    }
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff7f50;
+    }
+    .footer-text {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #4b2929;
+      border-radius: 50%;
+      color: #ffffff;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      transition: background-color 0.3s;
+    }
+    .social-icons a:hover {
+      background-color: #ff7f50;
+    }
+    .footer-buttons .btn {
+      margin-right: 10px;
+    }
+    .footer-links a {
+      color: #bbb;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: #ff7f50;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff7f50;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+
+
+        @media (max-width: 768px) {
+            .content1 h1{
+                font-size: 0.6;
+            }
+            .content1 h5{
+                font-size: 0.7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <img src="https://preview.colorlib.com/theme/calvin/assets/img/logo/logo.png.webp" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+
+                </ul>
+                <button type="button" class="btn btn-outline-light ps-4 pt-2 pb-2 pe-4">Let,S Talk</button>
+            </div>
+        </div>
+    </nav>
+    <div class=" parent1 container-fluid d-flex justifycontent-center">
+        <div class="container ">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 ">
+                <div class=" col img1 ">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/hero/empolye.png.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col  content1  ">
+                    <h1 class=" text-white col-md-auto ">My name is Calvin.
+                        Digital Product Designer</h1>
+                    <h5>Head of design at Calvino</h5>
+                </div>
+            </div>
+            <div class=" email row row-cols-1  row-cols-md-3 row-cols-sm-2 text-white">
+                <div class="col text-white">
+                    <h6>Design For</h6>
+                    <br>
+                    <h5>Web & Mobile</h5>
+                </div>
+                <div class="col">
+                    <h6>Phone</h6>
+                    <br>
+                    <h5>+92 345233 2823</h5>
+                </div>
+                <div class="col">
+                    <h6>Drop your Message</h6>
+                    <br>
+                    <h5>hasnainq1w1@gmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parent2 container-fluid">
+        <h1 class="text-center mt-5">My Experties</h1>
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+                <div class=" card7 col">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Strategy & Direction</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eaque pariatur sequi
+                        laudantium! Quasi perferendis provident obcaecati ea. Et natus eveniet nemo obcaecati sequi,
+                        dolor labore similique nobis odit deserunt!</p>
+                    <a class="" href="">Head of design at Calvino</a>
+                </div>
+                <div class="  card7 col">
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Strategy & Direction</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eaque pariatur sequi
+                        laudantium! Quasi perferendis provident obcaecati ea. Et natus eveniet nemo obcaecati sequi,
+                        dolor labore similique nobis odit deserunt!</p>
+                    <a class="" href="">Head of design at Calvino</a>
+                </div>
+                <div class=" card7 col">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h2>Strategy & Direction</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eaque pariatur sequi
+                        laudantium! Quasi perferendis provident obcaecati ea. Et natus eveniet nemo obcaecati sequi,
+                        dolor labore similique nobis odit deserunt!</p>
+                    <a class="" href="">Head of design at Calvino</a>
+                </div>
+                <div class=" card7 col">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Strategy & Direction</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eaque pariatur sequi
+                        laudantium! Quasi perferendis provident obcaecati ea. Et natus eveniet nemo obcaecati sequi,
+                        dolor labore similique nobis odit deserunt!</p>
+                    <a class="" href="">Head of design at Calvino</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parent3">
+        <h1 class="text-center mt-5">My Work</h1>
+        <div class="container text-center mt-5">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+                <div class=" card4 col">
+                    <img class="img-fluid"
+                        src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery1.png.webp" alt="">
+                </div>
+                <div class=" card4 col">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery2.png.webp"
+                        class="img-fluid" alt="">
+                </div>
+                <div class=" card4 col"><img class="img-fluid"
+                        src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery3.png.webp" alt="">
+                </div>
+                <div class=" card4 col">
+                    <img class="img-fluid"
+                        src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery4.png.webp" alt="">
+                </div>
+            </div>
+        </div>
+      
+
+    </div>
+    <div class="parent5 mt-5">
+        <div class="container ">
+            <div class=" about row row-cols-1 row-cols-sm-1 row-cols-md-2">
+                <div class="text1 col">
+                    <h1>About Us</h1>
+                    <br>
+                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus nostrum
+                        exercitationem quae modi quo sequi in libero suscipit placeat animi recusandae minima, labore
+                        nam alias temporibus. Accusantium, animi laboriosam!</h5><br>
+                        <h3>"What was the epicurus towards their children; each of these can have a chain.</h3>
+                </div>
+                <div class="col pro4">
+                  
+                     
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <h6>User Interface Design</h6>
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h6>User Experience</h6>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <h6>Illustration</h6>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner inner2">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand3.png.webp" class="img-fluid" alt="Figma" style=" height: 23vh;">
+                    <!-- <p>Figma</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand1.png.webp" class="img-fluid" alt="Sketch" style=" height: 23vh;">
+                    <!-- <p>Sketch</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand6.png.webp" class="img-fluid" alt="Illustrator" style=" height: 23vh;">
+                    <!-- <p>Illustrator</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand2.png.webp" class="img-fluid" alt="Illustrator" style=" height: 23vh;">
+                    <!-- <p>Illustrator</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand4.png.webp" class="img-fluid" alt="Illustrator" style=" height: 23vh;">
+                    <!-- <p>Illustrator</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand5.png.webp" class="img-fluid" alt="Illustrator" style=" height: 23vh;">
+                    <!-- <p>Illustrator</p> -->
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand4.png.webp" class="img-fluid" alt="XD" style=" height: 23vh;">
+                    <!-- <p>XD</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand2.png.webp" class="img-fluid" alt="Photoshop" style=" height: 23vh;">
+                    <!-- <p>Photoshop</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand1.png.webp" class="img-fluid" alt="Figma" style=" height: 23vh;">
+                    <!-- <p>Figma</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand6.png.webp" class="img-fluid" alt="Figma" style=" height: 23vh;">
+                    <!-- <p>Figma</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand3.png.webp" class="img-fluid" alt="Figma" style=" height: 23vh;">
+                    <!-- <p>Figma</p> -->
+                  </div>
+                  <div class="text-center mx-2">
+                    <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/brand5.png.webp" class="img-fluid" alt="Figma" style=" height: 23vh;">
+                    <!-- <p>Figma</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner inner4 ">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active">
+                <div class="text-center">
+                  <blockquote class="blockquote">
+                    <p>
+                      "Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We’re here to help you succeed!"
+                    </p>
+                  </blockquote>
+                  <img
+                    src="https://preview.colorlib.com/theme/calvin/assets/img/icon/testimonial.png.webp"
+                    alt="Client Photo"
+                    class="rounded-circle"
+                    style="width: 80px; height: 80px;"
+                  />
+                  <h5 class="mt-3">Jackson Miller</h5>
+                  <small>Designer @Colorlib</small>
+                </div>
+              </div>
+          
+              <!-- Testimonial 2 -->
+              <div class="carousel-item">
+                <div class="text-center">
+                  <blockquote class="blockquote">
+                    <p>
+                      "Working with this team was an absolute pleasure. The level of professionalism and attention to detail has truly exceeded our expectations."
+                    </p>
+                  </blockquote>
+                  <img
+                    src="https://preview.colorlib.com/theme/calvin/assets/img/icon/testimonial.png.webp"
+                    alt="Client Photo"
+                    class="rounded-circle"
+                    style="width: 80px; height: 80px;"
+                  />
+                  <h5 class="mt-3">Sophia Turner</h5>
+                  <small>CEO @TechWorld</small>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialSlider"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialSlider"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container my-5">
+            <h2 class="mb-4">Latest News</h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="news-card">
+                  <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/home-blog2.png.webp" alt="News Image">
+                  <div class="news-overlay">
+                    <div class="news-category">Tips</div>
+                    <div class="news-meta">12 March | by Alan</div>
+                    <div class="news-title">The Best SPA Salons For Your Relaxation</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="news-card">
+                  <img src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/home-blog1.png.webp" alt="News Image">
+                  <div class="news-overlay">
+                    <div class="news-category">Tips</div>
+                    <div class="news-meta">12 March | by Alan</div>
+                    <div class="news-title">The Best SPA Salons For Your Relaxation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="container">
+              <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <div class="footer-logo">Calvino.</div>
+                  <p class="footer-text">
+                    In the meantime shall soon find out the cause of this:<br>
+                    What was the epicurus towards their children.
+                  </p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+        
+                <!-- Right Section -->
+                <div class="col-md-6 text-md-end">
+                  <div class="footer-buttons">
+                    <a href="#" class="btn btn-outline-light rounded-pill">Download CV</a>
+                    <a href="#" class="btn btn-warning rounded-pill">Let's Talk</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Bottom Section -->
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <p class="footer-text mb-0">Copyright ©2024 All rights reserved | This template is made with <span style="color: #ff7f50;">♥</span> by Colorlib</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                  <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Work</a>
+                    <a href="#">Service</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+          <!-- Back to Top Button -->
+          <a href="#" class="back-to-top">&#8593;</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+      const imageSlider = document.querySelector('#imageSlider');
+
+// Bootstrap Carousel instance
+const carousel = new bootstrap.Carousel(imageSlider, {
+  interval: 2500, // Set the auto-slide interval (3 seconds)
+  ride: 'carousel', // Auto-start the carousel
+});
+const testimonialSlider = document.querySelector('#testimonialSlider');
+new bootstrap.Carousel(testimonialSlider, {
+  interval: 4300, // Auto-slide every 5 seconds
+  ride: 'carousel', // Automatically start
+});
+
+
+    </script>    
+</body>
+
+</html>
